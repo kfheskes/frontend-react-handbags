@@ -8,6 +8,7 @@ import bag4 from "./assets/bag_4.png"
 import Product from "./components/Product/Product";
 import brand from "./assets/brand.png"
 import ourStory from "./assets/our_story.png"
+import Tile from "./components/Tile/Tile";
 function App() {
 
     return (
@@ -35,20 +36,15 @@ function App() {
             </Product>
             </main>
             <footer>
-                <section>
-                    <h2>THE BRAND</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis delectus dignissimos expedita explicabo, facere fugiat impedit incidunt ipsam necessitatibus nemo neque obcaecati odit optio pariatur quas quis rem repellat repellendus repudiandae velit voluptatem voluptatibus. Aspernatur eveniet iusto minus optio quia. Accusamus autem commodi, dolor nobis rem totam veniam voluptatibus.</p>
-                </section>
-                <section>
-                    <img src={brand} alt="brandLogo"/>
-                </section>
-                <section>
-                    <img src={ourStory} alt="our_story"/>
-                </section>
-                <section>
-                    <h2>OUR STORY</h2>
+                <Tile titleBrand="THE BRAND">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis delectus dignissimos expedita explicabo, facere fugiat impedit</p>
+                    <p>incidunt ipsam necessitatibus nemo neque obcaecati odit optio pariatur quas quis rem repellat repellendus repudiandae velit voluptatem voluptatibus. Aspernatur eveniet iusto minus optio quia. Accusamus autem commodi, dolor nobis rem totam veniam voluptatibus.</p>
+                </Tile>
+                <Tile image={brand} imageDescription="brandLogo"/>
+                <Tile image={ourStory} alt="our_story"/>
+                <Tile titleBrand="OUR STORY" >
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quia tempore temporibus. Culpa, itaque voluptatem. Aut blanditiis facilis hic ipsam, officia officiis soluta unde vel voluptate voluptatibus! Asperiores blanditiis eum iure labore nam nesciunt odio officia quas repellat vero! Amet at commodi est fugit ipsam praesentium quas quisquam rem similique.</p>
-                </section>
+                </Tile>
             </footer>
         </div>
     </>

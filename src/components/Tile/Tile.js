@@ -1,17 +1,14 @@
-function Tile({ image, imageDescription, paragraph, titleBrand}){
+function Tile({ image, imageDescription, titleBrand, children}){
 
 
     return(
-        <div>
-        <section class="fotoTegel">
-        <img src={ image } alt={imageDescription}/>
 
-        </section>
-        <section class="tekstTegel">
-            <p>{ paragraph }</p>
+        <section>
+        <img src={ image } alt={imageDescription}/>
             <h2>{ titleBrand }</h2>
+            {children}
         </section>
-        </div>
+
     )
 }
 
